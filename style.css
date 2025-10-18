@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fffafc;
+    color: #333;
+  }
+  
+  header {
+    background: #ffb6c1;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #ffe4ec;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ff4d7a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  section {
+    padding: 30px 20px;
+  }
+  
+  .service-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 15px;
+    background: white;
+  }
+  
+  .service-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  form input, form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffb6c1;
+    color: white;
+    margin-top: 40px;
+  }
+  .services {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .service-category {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .service-category h3 {
+    color: #ff4d7a;
+    margin-bottom: 15px;
+  }
+  
+  .sub-style h4 {
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  ul {
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ff4d7a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #e0436d;
+  }
+  
+  .note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+  }
+    

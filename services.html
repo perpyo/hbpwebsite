@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Hair by Perpy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hair by Perpy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="bookings.html">Book</a>
+      <a href="policies.html">Policies</a>
+    </nav>
+  </header>
+
+  <style>
+    /* Minimal styling for accordion functionality */
+    .accordion {
+      cursor: pointer;
+      padding: 15px;
+      font-size: 1.1em;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: background 0.3s;
+      background-color: #f2f2f2;
+      margin-bottom: 5px;
+    }
+
+    .accordion.active {
+      background-color: #ddd;
+    }
+
+    .panel {
+      display: none;
+      padding: 0 15px 15px 15px;
+      background-color: #fafafa;
+    }
+
+    .panel ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .panel li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <p>Click on a category to see the hairstyles!</p>
+  </header>
+
+  <main class="services-container">
+
+    <!-- BRAIDS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Braids</h3>
+      <div class="panel">
+        <ul>
+          <li><strong>Small Braids:</strong> Bob $180, Knotless Bob $190, Mid-back $220, Knotless Mid-back $230, Waist $240, Knotless Waist $250</li>
+          <li><strong>S-Medium Braids:</strong> Bob $175, Knotless Bob $185, Mid-back $210, Knotless Mid-back $220, Waist $230, Knotless Waist $240</li>
+          <li><strong>Medium Braids:</strong> Bob $170, Knotless Bob $180, Mid-back $200, Knotless Mid-back $210, Waist $220, Knotless Waist $230</li>
+          <li><strong>Large Braids:</strong> Bob $160, Knotless Bob $170, Mid-back $180, Knotless Mid-back $200, Waist $210, Knotless Waist $220</li>
+          <li><strong>Jumbo Braids:</strong> Bob $150, Knotless Bob $170, Mid-back $160, Knotless Mid-back $170, Waist $180, Knotless Waist $190</li>
+          <li><strong>French Curl Braids:</strong> Small Layered (Mid-back) $200, Small Not Layered (Mid-back) $220, Small Layered (Waist) $240, Small Not Layered (Waist) $260, Small Layered (Butt) $280, Small Not Layered (Butt) $300</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CORNROWS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Cornrows</h3>
+      <div class="panel">
+        <ul>
+          <li>Without Extension (5-10): $60</li>
+          <li>With Extensions (5): $75</li>
+          <li>With Extensions (6-10): $90</li>
+          <li>With Extensions (10+): $110–$150</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FULANI BRAIDS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Fulani Braids</h3>
+      <div class="panel">
+        <ul>
+          <li>Small: $230</li>
+          <li>Medium: $210</li>
+          <li>Large: $190</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BOHO BRAIDS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Boho Braids</h3>
+      <div class="panel">
+        <ul>
+          <li>Small: Mid-back $230, Waist $250, Butt $270</li>
+          <li>Medium: Mid-back $210, Waist $230, Butt $250</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TWISTS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Twists (Marley, Brazilian Wool, Senegal)</h3>
+      <div class="panel">
+        <ul>
+          <li>Small Twists: Mid-back $210, Waist $230</li>
+          <li>Medium Twists: Mid-back $190, Waist $210</li>
+          <li>Small Bohemian Twists: Mid-back $230, Waist $250, Butt $270</li>
+          <li>Medium Bohemian Twists: Mid-back $210, Waist $230, Butt $250</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BUTTERFLY LOCS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Butterfly Locs</h3>
+      <div class="panel">
+        <ul>
+          <li>Bob $160</li>
+          <li>Mid-back $190</li>
+          <li>Waist $210</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ADD-ONS CATEGORY -->
+    <section class="service">
+      <h3 class="accordion">Add-Ons</h3>
+      <div class="panel">
+        <ul>
+          <li>Goddess Curls: $15</li>
+          <li>Boho Curls (Curls Sticking Out): $20</li>
+          <li>Beads on Cornrows: $30</li>
+          <li>Beads on Braids: $40</li>
+          <li>Extra Length (Longer than Waist): $20 per 5 inches</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
