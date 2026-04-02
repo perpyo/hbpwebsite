@@ -3,307 +3,293 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book an Appointment | Hair by Perpy</title>
+  <title>Services | Hair by Perpy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Book Your Appointment</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="bookings.html">Book</a>
-        <a href="policies.html">Policies</a>
-      </nav>
-    <p>Select your desired hairstyle below to see details and book your spot!</p>
-  </header>
+<header>
+  <h1>Hair by Perpy</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="promos.html">Promos</a>
+    <a href="policies.html">Policies</a>
+  </nav>
+</header>
 
-  <main class="booking-container">
+<main class="services-container">
+  <h2>Our Services</h2>
 
-    <!-- BRAIDS -->
-    <section class="hairstyle">
-      <button class="accordion">Braids</button>
-      <div class="panel">
-        <img src="images/braids.jpg" alt="Braids" class="style-image" />
-        <p>Classic knotless or box braids with neat parting and long-lasting hold.</p>
-        <p><strong>Duration:</strong> 5–7 hours</p>
+  <!-- BRAIDS -->
+  <section class="service">
+    <h3 class="accordion">Braids</h3>
+    <div class="panel">
+      <p>Classic knotless or box braids.</p>
+      <form class="booking-form" data-service="Braids">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-        <form class="booking-form">
-          <label>Size:</label>
-          <select required>
-            <option value="">Select Size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-            <option value="butt">Butt</option>
-          </select>
+        <label>Size:</label>
+        <select name="size" required>
+          <option value="">Select Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="boho-curls">Boho Curls</option>
-            <option value="goddess-curls">Goddess Curls</option>
-            <option value="beads">Beads</option>
-            <option value="color">Added Color</option>
-            <option value="extra-length">Extra Length</option>
-          </select>
+        <label>Length:</label>
+        <select name="length" required>
+          <option value="">Select Length</option>
+          <option value="Mid-back">Mid-back</option>
+          <option value="Waist">Waist</option>
+          <option value="Butt">Butt</option>
+        </select>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-braids" />
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
 
-          <button type="submit">Book Braids</button>
-        </form>
-      </div>
-    </section>
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
 
-    <!-- CORNROWS -->
-    <section class="hairstyle">
-      <button class="accordion">Cornrows</button>
-      <div class="panel">
-        <img src="images/cornrows.jpg" alt="Cornrows" class="style-image" />
-        <p>Clean, sleek cornrows that are quick, stylish, and protective.</p>
-        <p><strong>Duration:</strong> 2–4 hours</p>
+        <button type="submit">Book Braids</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
 
-        <form class="booking-form">
-          <label>Size:</label>
-          <select required>
-            <option value="">Select Size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
+  <!-- FULANI BRAIDS -->
+  <section class="service">
+    <h3 class="accordion">Fulani Braids</h3>
+    <div class="panel">
+      <p>Fulani braids with beads and accessories.</p>
+      <form class="booking-form" data-service="Fulani Braids">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="shoulder">Shoulder</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-          </select>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="boho-curls">Boho Curls</option>
-            <option value="goddess-curls">Goddess Curls</option>
-            <option value="beads">Beads</option>
-            <option value="color">Added Color</option>
-          </select>
+        <label>Size:</label>
+        <select name="size" required>
+          <option value="">Select Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-cornrows" />
+        <label>Length:</label>
+        <select name="length" required>
+          <option value="">Select Length</option>
+          <option value="Mid-back">Mid-back</option>
+          <option value="Waist">Waist</option>
+          <option value="Butt">Butt</option>
+        </select>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-          <button type="submit">Book Cornrows</button>
-        </form>
-      </div>
-    </section>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
 
-    <!-- FULANI BRAIDS -->
-    <section class="hairstyle">
-      <button class="accordion">Fulani Braids</button>
-      <div class="panel">
-        <img src="images/fulani.jpg" alt="Fulani Braids" class="style-image" />
-        <p>Traditional Fulani-inspired braids with modern flair and detailed parting.</p>
-        <p><strong>Duration:</strong> 4–6 hours</p>
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
 
-        <form class="booking-form">
-          <label>Size:</label>
-          <select required>
-            <option value="">Select Size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-          </select>
+        <button type="submit">Book Fulani Braids</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-          </select>
+  <!-- TWISTS -->
+  <section class="service">
+    <h3 class="accordion">Twists</h3>
+    <div class="panel">
+      <p>Marley, Senegal, or Bohemian twists.</p>
+      <form class="booking-form" data-service="Twists">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="beads">Beads</option>
-            <option value="boho-curls">Boho Curls</option>
-            <option value="goddess-curls">Goddess Curls</option>
-          </select>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-fulani" />
+        <label>Size:</label>
+        <select name="size" required>
+          <option value="">Select Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Length:</label>
+        <select name="length" required>
+          <option value="">Select Length</option>
+          <option value="Mid-back">Mid-back</option>
+          <option value="Waist">Waist</option>
+          <option value="Butt">Butt</option>
+        </select>
 
-          <button type="submit">Book Fulani Braids</button>
-        </form>
-      </div>
-    </section>
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-    <!-- BOHO BRAIDS -->
-    <section class="hairstyle">
-      <button class="accordion">Boho Braids</button>
-      <div class="panel">
-        <img src="images/boho.jpg" alt="Boho Braids" class="style-image" />
-        <p>Boho knotless braids with curly ends or curls throughout for a soft, romantic look.</p>
-        <p><strong>Duration:</strong> 6–8 hours</p>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
 
-        <form class="booking-form">
-          <label>Size:</label>
-          <select required>
-            <option value="">Select Size</option>
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-          </select>
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-            <option value="butt">Butt</option>
-          </select>
+        <button type="submit">Book Twists</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="extra-curls">Extra Boho Curls</option>
-            <option value="beads">Beads</option>
-            <option value="color">Added Color</option>
-          </select>
+  <!-- BUTTERFLY LOCS -->
+  <section class="service">
+    <h3 class="accordion">Butterfly Locs</h3>
+    <div class="panel">
+      <p>Boho butterfly locs for a stylish look.</p>
+      <form class="booking-form" data-service="Butterfly Locs">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-boho" />
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Size:</label>
+        <select name="size" required>
+          <option value="">Select Size</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
 
-          <button type="submit">Book Boho Braids</button>
-        </form>
-      </div>
-    </section>
+        <label>Length:</label>
+        <select name="length" required>
+          <option value="">Select Length</option>
+          <option value="Mid-back">Mid-back</option>
+          <option value="Waist">Waist</option>
+          <option value="Butt">Butt</option>
+        </select>
 
-    <!-- TWISTS -->
-    <section class="hairstyle">
-      <button class="accordion">Twists</button>
-      <div class="panel">
-        <img src="images/twists.jpg" alt="Twists" class="style-image" />
-        <p>Marley, Senegalese, or Brazilian wool twists that are soft, lightweight, and elegant.</p>
-        <p><strong>Duration:</strong> 5–7 hours</p>
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-        <form class="booking-form">
-          <label>Type:</label>
-          <select required>
-            <option value="">Select Type</option>
-            <option value="marley">Marley Twists</option>
-            <option value="senegalese">Senegalese Twists</option>
-            <option value="brazilian">Brazilian Wool Twists</option>
-            <option value="bohemian">Bohemian Twists</option>
-          </select>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-            <option value="butt">Butt</option>
-          </select>
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="boho-curls">Boho Curls</option>
-            <option value="beads">Beads</option>
-            <option value="extra-length">Extra Length</option>
-          </select>
+        <button type="submit">Book Butterfly Locs</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-twists" />
+  <!-- ADD-ONS -->
+  <section class="service">
+    <h3 class="accordion">Add-Ons</h3>
+    <div class="panel">
+      <p>Goddess curls, boho curls, beads, extra length, and color.</p>
+      <form class="booking-form" data-service="Add-Ons">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <button type="submit">Book Twists</button>
-        </form>
-      </div>
-    </section>
+        <label>Choose Add-On:</label>
+        <select name="addon" required>
+          <option value="">Select Add-On</option>
+          <option value="Goddess Curls">Goddess Curls</option>
+          <option value="Boho Curls">Boho Curls</option>
+          <option value="Beads">Beads</option>
+          <option value="Extra Length">Extra Length</option>
+          <option value="Color">Color</option>
+        </select>
 
-    <!-- BUTTERFLY LOCS -->
-    <section class="hairstyle">
-      <button class="accordion">Butterfly Locs</button>
-      <div class="panel">
-        <img src="images/locs.jpg" alt="Butterfly Locs" class="style-image" />
-        <p>Soft, bohemian-style butterfly locs that give a natural, effortless look.</p>
-        <p><strong>Duration:</strong> 6–8 hours</p>
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-        <form class="booking-form">
-          <label>Size:</label>
-          <select required>
-            <option value="">Select Size</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-          </select>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
 
-          <label>Length:</label>
-          <select required>
-            <option value="">Select Length</option>
-            <option value="shoulder">Shoulder</option>
-            <option value="mid-back">Mid-back</option>
-            <option value="waist">Waist</option>
-          </select>
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
 
-          <label>Add-Ons:</label>
-          <select>
-            <option value="">None</option>
-            <option value="boho-curls">Boho Curls</option>
-            <option value="beads">Beads</option>
-            <option value="color">Added Color</option>
-          </select>
+        <button type="submit">Book Add-On</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
 
-          <label>Date:</label>
-          <input type="date" name="date" required id="date-locs" />
+  <!-- CUSTOM SERVICE -->
+  <section class="service">
+    <h3 class="accordion">Custom Services</h3>
+    <div class="panel">
+      <p>Got a style in mind? Let’s create it together!</p>
+      <form class="booking-form" data-service="Custom Service">
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
 
-          <label>Time:</label>
-          <select name="time" required>
-            <option value="8am">8:00 AM</option>
-            <option value="4:30pm">4:30 PM</option>
-          </select>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-          <button type="submit">Book Butterfly Locs</button>
-        </form>
-      </div>
-    </section>
+        <label>Description of Service:</label>
+        <textarea name="description" placeholder="Describe what you want" required></textarea>
 
-  </main>
+        <label>Date:</label>
+        <input type="date" name="date" required>
 
-  <script src="main.js"></script>
+        <label>Time:</label>
+        <select name="time" required>
+          <option value="8am">8:00 AM</option>
+          <option value="4pm">4:00 PM</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="agree" required>
+          I agree to the <a href="policies.html" target="_blank">policies</a>.
+        </label>
+
+        <button type="submit">Book Custom Service</button>
+        <p class="confirmation hidden"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script src="main.js"></script>
 </body>
 </html>
